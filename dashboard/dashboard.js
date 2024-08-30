@@ -55,6 +55,18 @@ function createDataRow(dataArr) {
     td.innerText = d
     row.appendChild(td)
   }
+  const m = `
+  <button onclick="document.getElementById('di${dataArr[1]}').show()">Info</button>
+  <dialog id="di${dataArr[1]}">
+    <p>Greetings, one and all!</p>
+    <form method="dialog">
+      <button>OK</button>
+    </form>
+  </dialog>
+  `
+  const tdInfo = document.createElement('td')
+  tdInfo.innerHTML = m
+  row.append(tdInfo)
   return row
 }
 
