@@ -58,7 +58,7 @@ function createDataRow(dataArr) {
   const m = `
   <button onclick="document.getElementById('di${dataArr[1]}').show()">Info</button>
   <dialog id="di${dataArr[1]}">
-    <p>Greetings, one and all!</p>
+    <p>Greetings, one and all! ID di${dataArr[1]}</p>
     <form method="dialog">
       <button>OK</button>
     </form>
